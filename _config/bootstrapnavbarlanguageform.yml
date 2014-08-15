@@ -1,0 +1,4 @@
+name: bootstrapnavbarlanguageform
+---
+BootstrapNavbarLanguageForm:
+  submitOnChange: true
