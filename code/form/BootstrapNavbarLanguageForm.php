@@ -23,7 +23,7 @@ class BootstrapNavbarLanguageForm extends Form {
         //$locale->addExtraClass('col-md-2');
         // Create actions
         $actions = new FieldList(
-            $submit = new FormAction('updateLang', _t('BootstrapNavbarLanguageForm.SUBMIT','BootstrapNavbarLanguageForm.SUBMIT'))
+            $submit = new BootstrapLoadingFormAction('updateLang', _t('BootstrapNavbarLanguageForm.SUBMIT','BootstrapNavbarLanguageForm.SUBMIT'))
         );
         $submit->addExtraClass('btn btn-default');
 
