@@ -11,6 +11,10 @@ class BootstrapNavbarLanguageFormController extends Extension {
     );
     
     public function onBeforeInit(){
+        // Allow to set Locale by GET Parameter
+        if(isset($_GET['Locale']) && key_exists($_GET['Locale'], Config::inst()->get('i18n', 'all_locales'))){
+            Session::set('Locale', $_GET['Locale']);
+        }
         
         if(Member::currentUser() && Member::currentUser()->Locale) i18n::set_locale(Member::currentUser()->Locale);
         elseif(Session::get('Locale')) i18n::set_locale(Session::get('Locale'));
