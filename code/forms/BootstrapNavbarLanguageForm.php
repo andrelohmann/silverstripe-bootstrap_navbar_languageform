@@ -47,6 +47,8 @@ class BootstrapNavbarLanguageForm extends Form {
         i18n::set_locale($data['Locale']);
             
         Session::set('Locale', $data['Locale']);
+            
+        Cookie::set('Locale', $data['Locale']);
         
         Controller::curr()->redirectBack();
     }
