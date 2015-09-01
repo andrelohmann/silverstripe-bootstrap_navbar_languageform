@@ -1,7 +1,7 @@
 <?php
 /**
- * Implements a verification email on user registration
- * @module EmailVerifiedMember
+ * Adds attributes to Member model
+ * @module bootstrap_navbar_languageform
  */
 class BootstrapNavbarLanguageFormMember extends DataExtension {
   

@@ -1,9 +1,5 @@
 <?php
 
-Controller::add_extension('BootstrapNavbarLanguageFormController');
-
-Member::add_extension('BootstrapNavbarLanguageFormMember');
-
 // Add the Following Lines to your _config.php file
 //if(Member::currentUser() && Member::currentUser()->LocaleCode) i18n::set_locale(Member::currentUser()->LocaleCode);
 //elseif(Session::get('LocaleCode')) i18n::set_locale(Session::get('LocaleCode'));

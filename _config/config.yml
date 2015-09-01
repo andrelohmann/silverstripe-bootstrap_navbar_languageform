@@ -1,0 +1,9 @@
+name: bootstrap-navbar-languageform
+---
+Controller:
+  extensions:
+    - BootstrapNavbarLanguageFormController
+
+Member:
+  extensions:
+    - BootstrapNavbarLanguageFormMember
